@@ -1,5 +1,6 @@
 import { HeroSection } from "@/pages/HeroSection";
 import { ItinerarySection } from "@/pages/ItinerarySection";
+import { MustVisitPlaces } from "./pages/MustVisitPlaces";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     >
       <HeroSection />
       <ItinerarySection />
+      <MustVisitPlaces />
     </div>
   );
 }

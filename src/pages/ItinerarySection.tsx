@@ -63,7 +63,7 @@ const itinerary = {
 export function ItinerarySection() {
   return (
     <section className="h-screen flex justify-center items-center">
-      <div className="w-150 bg-background p-4 rounded-2xl border">
+      <div className="w-300 bg-background p-4 rounded-2xl border">
         <h2 className="text-3xl font-bold mb-6">Trip Itinerary</h2>
 
         <Tabs defaultValue="Day 1">
