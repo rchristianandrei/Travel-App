@@ -48,7 +48,7 @@ export function MustVisitPlaces() {
   };
 
   return (
-    <section className="h-screen flex justify-center items-center">
+    <section className="flex justify-center items-center">
       <section className="space-y-6 w-300 bg-background p-4 rounded-2xl border">
         <h2 className="text-2xl font-bold">Must Visit Places</h2>
 
