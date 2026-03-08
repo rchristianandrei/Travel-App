@@ -9,21 +9,25 @@ const itinerary = {
       title: "Arrival & Exploring",
       activities: [
         {
-          time: "09:00",
-          title: "Breakfast at Cafe",
-          location: "Downtown Cafe",
-          note: "Try the local pastries",
+          time: "01:00 pm",
+          title: "Meet up",
+          location: "LRT Buendia, Pasay",
         },
         {
-          time: "11:00",
-          title: "City Museum",
-          location: "National Museum",
-          note: "History and art exhibits",
+          time: "02:00 pm",
+          title: "Airbnb Check in",
+          location: "Binondo, Manila",
         },
         {
-          time: "14:00",
-          title: "Lunch",
-          location: "Street Food Market",
+          time: "03:00 pm",
+          title: "Explore Binondo",
+          location: "Binondo Chinatown",
+          note: "Checkout the pinned food spots",
+        },
+        {
+          time: "07:00 pm",
+          title: "Go back to airbnb",
+          location: "Binondo Chinatown",
         },
       ],
     },
@@ -32,19 +36,24 @@ const itinerary = {
       title: "Chill Day",
       activities: [
         {
-          time: "08:00",
-          title: "Mountain Hike",
-          location: "Mt. Ridge Trail",
+          time: "11:00 am",
+          title: "Check out",
+          location: "Binondo Manila",
         },
         {
-          time: "13:00",
-          title: "Picnic Lunch",
+          time: "12:00 pm",
+          title: "Lunch",
           location: "Summit Viewpoint",
         },
         {
-          time: "18:30",
-          title: "Sunset Beach",
-          location: "Coral Beach",
+          time: "01:00 pm",
+          title: "Explore Part 2",
+          location: "Binondo, Manila",
+        },
+        {
+          time: "03:00 pm",
+          title: "Go home",
+          location: "LRT Buendia, Pasay",
         },
       ],
     },
@@ -54,7 +63,7 @@ const itinerary = {
 export function ItinerarySection() {
   return (
     <section className="h-screen flex justify-center items-center">
-      <div className="w-150 bg-white/20 backdrop-blur-md shadow-lg p-4 rounded-2xl">
+      <div className="w-150 bg-background p-4 rounded-2xl border">
         <h2 className="text-3xl font-bold mb-6">Trip Itinerary</h2>
 
         <Tabs defaultValue="Day 1">
@@ -68,7 +77,7 @@ export function ItinerarySection() {
 
           {itinerary.days.map((day) => (
             <TabsContent key={day.day} value={day.day}>
-              <Card>
+              <Card className="border">
                 <CardHeader>
                   <CardTitle>{day.title}</CardTitle>
                 </CardHeader>
